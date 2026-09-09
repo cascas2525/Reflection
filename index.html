@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Reflection — SAD- A</title>
+<title>My Reflections — SAD- A</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -24,8 +24,10 @@
     color: var(--text);
     font-family: var(--sans);
     display:flex;
+    flex-direction: column;
     align-items:center;
     justify-content:center;
+    gap: 28px;
     padding: 30px 16px;
   }
 
@@ -95,7 +97,7 @@
 <body>
 
   <div class="card">
-    <div class="tag">reflection</div>
+    <div class="tag">reflection 1</div>
     <h1>My Reflection</h1>
     <div class="subject">BSCS- 2 | SAD - A</div>
 
@@ -108,12 +110,26 @@ I think learning these topics will also help me in the future, especially in my 
 
     <footer>
       <span>— Delos Reyes, Harvey B. </span>
-      <span id="today"></span>
+      <span class="today"></span>
+    </footer>
+  </div>
+
+  <div class="card">
+    <div class="tag">reflection 2</div>
+    <h1>My Reflection</h1>
+    <div class="subject">BSCS- 2 | SAD - A</div>
+
+    <textarea placeholder="I learned that a Data Flow Diagram (DFD) is important for showing how data moves through a system. I learned that each process, data flow, data store, and external entity should be properly connected and logically arranged. I also realized that a logical DFD focuses more on what the system does with the data rather than the specific technology used. This helped me understand how to create a clearer and more organized representation of a system."></textarea>
+
+    <footer>
+      <span>— Delos Reyes, Harvey B. </span>
+      <span class="today"></span>
     </footer>
   </div>
 
   <script>
-    document.getElementById('today').textContent = new Date().toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' });
+    const dateStr = new Date().toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' });
+    document.querySelectorAll('.today').forEach(el => el.textContent = dateStr);
   </script>
 
 </body>

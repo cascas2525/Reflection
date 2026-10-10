@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Reflection — SAD- A</title>
+<title>My Reflections — SAD- A</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -17,16 +17,16 @@
     --sans: 'Inter', sans-serif;
   }
   *{ box-sizing:border-box; }
-  html,body{ height:100%; }
+  html{ min-height:100%; }
   body{
     margin:0;
+    min-height:100vh;
     background: var(--bg);
     color: var(--text);
     font-family: var(--sans);
     display:flex;
     flex-direction: column;
     align-items:center;
-    justify-content:center;
     gap: 28px;
     padding: 30px 16px;
   }
@@ -110,7 +110,7 @@ I think learning these topics will also help me in the future, especially in my 
 
     <footer>
       <span>— Delos Reyes, Harvey B. </span>
-      <span class="today"></span>
+      <span>Aug 11, 2026</span>
     </footer>
   </div>
 
@@ -123,14 +123,25 @@ I think learning these topics will also help me in the future, especially in my 
 
     <footer>
       <span>— Delos Reyes, Harvey B. </span>
-      <span class="today"></span>
+      <span>Sep 8, 2026</span>
     </footer>
   </div>
 
-  <script>
-    const dateStr = new Date().toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' });
-    document.querySelectorAll('.today').forEach(el => el.textContent = dateStr);
-  </script>
+  <div class="card">
+    <div class="tag">reflection 3</div>
+    <h1>My Reflection</h1>
+    <div class="subject">BSCS- 2 | SAD - A</div>
+
+    <textarea placeholder="In our class, I learned how to use Structured English, decision tables, and decision trees to explain the steps and decisions in a system. I learned that each one presents the logic differently. Structured English uses written instructions, decision tables show the possible combinations of conditions and actions, and decision trees make the flow easier to follow.
+
+The lesson also made me realize that I need to understand the scenario first before making these models. Even a small mistake in a condition can change what the system does. Instead of rushing to finish, I should check whether my answer follows the given rules. This is something I can apply in programming because planning the logic first can help me avoid mistakes when writing code."></textarea>
+
+    <footer>
+      <span>— Delos Reyes, Harvey B. </span>
+      <span>Oct 10, 2026</span>
+    </footer>
+  </div>
+
 
 </body>
 </html>
